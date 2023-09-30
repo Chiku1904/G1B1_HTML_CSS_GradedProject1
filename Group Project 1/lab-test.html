@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-Test</title>
+    <link rel="stylesheet" href="lab-test.css">
+</head>
+
+<body>
+    <div>
+
+        <form action="##" id="lab-test">
+
+            <img src="./Images/Lab-Test/lab-test.jpg" alt="">
+
+            <h2>1. Your Contact Details</h2>
+            <input type="text" placeholder="Full Name" required>
+            <input type="number" placeholder="Patient Id if exists"><br>
+            <input type="number" maxlength="10" min="1000000000" max="9999999999" placeholder="Contact Number" required>
+            <input type="email" placeholder="Email Id" required>
+
+            <h2>2. Address</h2>
+            <input type="number" placeholder="House Number">
+            <input type="text" placeholder="Street">
+            <input type="text" placeholder="Area"><br>
+
+            <label for="dist">District: </label>
+            <select id="dist">
+                <option value="cuttack" selected>Cuttack</option>
+                <option value="bhubaneswar">Bhubaneswar</option>
+                <option value="rourKela">RourKela</option>
+                <option value="puri">Puri</option>
+                <option value="balasore">Balasore</option>
+            </select>
+
+            <h2>3. Choose the Test Type</h2>
+            <p>(Check atleast one box without fail)</p>
+
+            <input type="checkbox" id="cbc">
+            <label for="cbc">CBC</label><br>
+            <input type="checkbox" id="urine">
+            <label for="urine">Complete Urine</label><br>
+            <input type="checkbox" id="lp">
+            <label for="lp">Lipid Profile</label><br>
+            <input type="checkbox" id="ths">
+            <label for="ths">Thyroid Stimulating Hormone</label><br>
+            <input type="checkbox" id="glucose">
+            <label for="glucose">Glucose Test</label>
+    
+            <h2>4. Do you want a hard copy of the report also?</h2>
+
+            <input type="radio" name="report" id="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" name="report" id="no">
+            <label for="no">No</label>
+
+            <h2>5. Select Your Comfortable Date and Time</h2>
+            <label for="date">Date</label><br>
+            <input type="date" name="date&time" id="date"><br>
+            
+            <label for="time">Time</label><br>
+            <input type="time" name="date&time" id="time"><br>
+
+            
+        </form>
+        <button type="reset" form="lab-test">Reset</button>
+
+        <button type="submit" form="lab-test">Submit</button>
+    </div>
+
+
+</body>
+
+</html>
